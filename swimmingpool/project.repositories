@@ -155,16 +155,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>soapui</id>
-        <url>http://www.soapui.org/repository/maven2/</url>
+        <id>sonatype-plus-snapshots</id>
+        <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>sonatype-plus-snapshots</id>
-        <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
+        <id>soapui</id>
+        <url>http://www.soapui.org/repository/maven2/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -187,16 +187,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>fusesource</id>
-        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
+        <id>apache-public</id>
+        <url>https://repository.apache.org/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>apache-public</id>
-        <url>https://repository.apache.org/content/groups/public/</url>
+        <id>fusesource</id>
+        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
