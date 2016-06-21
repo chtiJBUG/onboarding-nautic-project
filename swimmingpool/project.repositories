@@ -75,16 +75,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-thirdparty-uploads</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads/</url>
+        <id>repository.springframework.maven.release</id>
+        <url>http://maven.springframework.org/release</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>repository.springframework.maven.release</id>
-        <url>http://maven.springframework.org/release</url>
+        <id>jboss-thirdparty-uploads</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -187,16 +187,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>apache-public</id>
-        <url>https://repository.apache.org/content/groups/public/</url>
+        <id>fusesource</id>
+        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>fusesource</id>
-        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
+        <id>apache-public</id>
+        <url>https://repository.apache.org/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -211,17 +211,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>chtijbug-snapshot</id>
-        <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-snapshot/</url>
-        <source>SETTINGS</source>
+        <id>local</id>
+        <url>/root/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/root/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>chtijbug-snapshot</id>
+        <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-snapshot/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
