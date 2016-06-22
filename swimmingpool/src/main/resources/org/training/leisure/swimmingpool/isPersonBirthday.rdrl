@@ -1,9 +1,19 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import org.chtijbug.example.swimmingpool.Person;
+import org.chtijbug.example.swimmingpool.Quote;
+import org.chtijbug.example.swimmingpool.CalculatedAttribute;
 
 rule "isPersonBirthday"
 	dialect "mvel"
 	when
+		pper : Person( birthdate != null )
+		Quote( qd : quoteDate != null )
+		not (cc : CalculatedAttribute( key == "IsPersonBirthday" ) and Person( calculatedAttributeList contains cc )) 
 	then
+		CalculatedAttribute fact0 = new CalculatedAttribute();
+		fact0.setKey( "IsPersonBirthday" );
+		fact0.setStringValue( "" );
+		insert( fact0 );
 end
