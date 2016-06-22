@@ -14,6 +14,6 @@ rule "isPersonBirthday"
 	then
 		CalculatedAttribute fact0 = new CalculatedAttribute();
 		fact0.setKey( "IsPersonBirthday" );
-		fact0.setStringValue( "" );
+		fact0.setStringValue( "=new Boolean(isBirthday(bd,qd)).toString()" );
 		insert( fact0 );
 end
