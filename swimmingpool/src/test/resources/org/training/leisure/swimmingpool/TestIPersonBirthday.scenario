@@ -31,7 +31,7 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>70</executionTimeResult>
+      <executionTimeResult>110</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -39,6 +39,7 @@
         <expect-field>
           <fieldName>stringValue</fieldName>
           <expected>true</expected>
+          <actualResult>No match</actualResult>
           <successResult>true</successResult>
           <explanation>[CalculatedAttribute] field [stringValue] was [true].</explanation>
           <operator>==</operator>
@@ -56,7 +57,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-23 15:03:12.794 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 15:24:10.922 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
