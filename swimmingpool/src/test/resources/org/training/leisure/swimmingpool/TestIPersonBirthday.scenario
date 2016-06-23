@@ -55,7 +55,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>70</executionTimeResult>
+      <executionTimeResult>62</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -64,8 +64,8 @@
           <fieldName>stringValue</fieldName>
           <expected>true</expected>
           <actualResult>false</actualResult>
-          <successResult>false</successResult>
-          <explanation>[CalculatedAttribute] field [stringValue] was [false] expected [true].</explanation>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAttribute] field [stringValue] was [true].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -81,7 +81,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-23 15:48:03.654 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 17:08:41.587 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
