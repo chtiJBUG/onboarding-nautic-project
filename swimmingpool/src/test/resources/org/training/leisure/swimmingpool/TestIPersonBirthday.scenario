@@ -31,17 +31,17 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>37</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>stringValue</fieldName>
           <expected>true</expected>
-          <actualResult>=new Boolean(isBirthday(bd,qd)).toString()</actualResult>
+          <actualResult>No match</actualResult>
           <successResult>false</successResult>
-          <explanation>[CalculatedAttribute] field [stringValue] was [=new Boolean(isBirthday(bd,qd)).toString()] expected [true].</explanation>
+          <explanation>Fact of type [CalculatedAttribute] was not found in the results.</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -50,7 +50,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-23 07:06:57.130 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 07:10:18.126 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
