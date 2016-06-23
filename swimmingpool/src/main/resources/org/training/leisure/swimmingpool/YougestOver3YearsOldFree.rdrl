@@ -15,11 +15,11 @@ rule "YougestOver3YearsOldFree"
 			min(aage)) 
 		aPerson : Person( age == ( nn ) , Sprice : standardPrice)
 	then
-		Price Aprice = new Price();
-		Aprice.setDescription( "YougestOver3YearsOldFree" );
-		Aprice.setPriceType( PriceType.promotion );
-		Aprice.setAmount( Sprice );
-		insert( Aprice );
+		Price aPrice = new Price();
+		aPrice.setDescription( "YougestOver3YearsOldFree" );
+		aPrice.setPriceType( PriceType.promotion );
+		aPrice.setAmount( Sprice );
+		insert( aPrice );
 		aPerson.addPrice( aPrice );
 		CalculatedAttribute fact0 = new CalculatedAttribute();
 		fact0.setKey( "YougestOver3YearsOldFree" );
