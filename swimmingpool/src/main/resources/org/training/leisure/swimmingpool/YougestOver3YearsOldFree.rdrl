@@ -8,5 +8,7 @@ rule "YougestOver3YearsOldFree"
 	dialect "mvel"
 	when
 		List( size() > 1 ) from collect ( Person( age >= 3.0 )) 
+		Number( ) from accumulate ( Person( aage : age >= 3.0 ),
+			min(aage)) 
 	then
 end
