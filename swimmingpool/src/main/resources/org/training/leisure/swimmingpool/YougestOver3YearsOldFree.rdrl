@@ -5,6 +5,7 @@ import org.chtijbug.example.swimmingpool.Person;
 import java.util.List;
 import org.chtijbug.example.swimmingpool.Price;
 import org.chtijbug.example.swimmingpool.CalculatedAttribute;
+import org.chtijbug.example.swimmingpool.PriceType;
 
 rule "YougestOver3YearsOldFree"
 	dialect "mvel"
