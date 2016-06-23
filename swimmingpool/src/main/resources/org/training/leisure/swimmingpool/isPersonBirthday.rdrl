@@ -9,7 +9,7 @@ rule "isPersonBirthday"
 	ruleflow-group "init"
 	dialect "mvel"
 	when
-		pper : Person( birthdate != null )
+		pper : Person( bd : birthdate != null )
 		Quote( qd : quoteDate != null )
 		not (cc : CalculatedAttribute( key == "IsPersonBirthday" ) and Person( calculatedAttributeList contains cc )) 
 	then
