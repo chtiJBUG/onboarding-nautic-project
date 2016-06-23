@@ -27,9 +27,6 @@
       <name>p2</name>
       <isModify>false</isModify>
     </fact-data>
-    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-      <name>init</name>
-    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <fact-data>
       <type>Quote</type>
       <fieldData>
@@ -45,12 +42,15 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>standard</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>init</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
       <executionTimeResult>18</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
   </fixtures>
-  <lastRunResult>2016-06-23 17:29:43.203 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 17:31:05.192 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
