@@ -1,0 +1,13 @@
+<scenario>
+  <name>TestIPersonBirthday</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures/>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>org.training.leisure.swimmingpool</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions/>
+</scenario>
