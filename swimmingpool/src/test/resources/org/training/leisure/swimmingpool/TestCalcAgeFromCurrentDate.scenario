@@ -31,7 +31,7 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>74</executionTimeResult>
+      <executionTimeResult>66</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -49,8 +49,15 @@
       <name>p</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>CalcAgeFromCurrentDate</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [CalcAgeFromCurrentDate] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-23 14:23:25.183 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 15:02:37.642 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
