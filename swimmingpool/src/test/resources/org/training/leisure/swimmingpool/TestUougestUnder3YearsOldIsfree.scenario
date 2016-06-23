@@ -35,6 +35,11 @@
           <value>15-Jun-2016</value>
           <nature>1</nature>
         </field-data>
+        <field-data>
+          <name>period</name>
+          <value>SeasonType.day</value>
+          <nature>4</nature>
+        </field-data>
       </fieldData>
       <name>q</name>
       <isModify>false</isModify>
