@@ -11,14 +11,14 @@ rule "isPersonBirthday"
 	when
 		pper : Person( bd : birthdate != null )
 		Quote( qd : quoteDate != null )
+		not (cc : CalculatedAttribute( key == "IsPersonBirthday" ) and Person( calculatedAttributeList contains cc )) 
 	then
 		CalculatedAttribute ica = new CalculatedAttribute();
 		ica.setKey( "IsPersonBirthday" );
 		ica.setStringValue( new Boolean(isBirthday(bd,qd)).toString() );
 		insert( ica );
-		pper.getCalculatedAttributeList().add(ica);
 		modify( pper ) {
 				setAge( -1.0 ), 
-				setCalculatedAttributeList( pper.getCalculatedAttributeList() )
+				setCalculatedAttributeList( pper.getCalculatedAttributeList().add(ica) )
 		}
 end
