@@ -2,6 +2,7 @@ package org.training.leisure.swimmingpool;
 import java.util.Calendar;
 import java.util.Date;
 import java.math.BigDecimal
+java.util.Collection;
 
 function int dateCalculation(Date currentDate,Date birthDate) {
 
