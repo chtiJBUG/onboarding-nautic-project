@@ -3,6 +3,8 @@ package org.training.leisure.swimmingpool;
 import java.lang.Number;
 import org.chtijbug.example.swimmingpool.Person;
 import java.util.List;
+import org.chtijbug.example.swimmingpool.Price;
+import org.chtijbug.example.swimmingpool.CalculatedAttribute;
 
 rule "YougestOver3YearsOldFree"
 	dialect "mvel"
@@ -10,6 +12,16 @@ rule "YougestOver3YearsOldFree"
 		List( size() > 1 ) from collect ( Person( age >= 3.0 )) 
 		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
 			min(aage)) 
-		aPerson : Person( age == ( nn ) )
+		aPerson : Person( age == ( nn ) , Sprice : standardPrice)
 	then
+		Price APrice = new Price();
+		APrice.setDescription( "YougestOver3YearsOldFree" );
+		APrice.setPriceType( PriceType.promotion );
+		APrice.setAmount( Sprice );
+		insert( APrice );
+		aPerson.addPrice( aPrice );
+		CalculatedAttribute fact0 = new CalculatedAttribute();
+		fact0.setKey( "YougestOver3YearsOldFree" );
+		fact0.setStringValue( "Person is free" );
+		insert( fact0 );
 end
