@@ -11,11 +11,6 @@
           <value>01-Dec-1985</value>
           <nature>1</nature>
         </field-data>
-        <field-data>
-          <name>age</name>
-          <value>-1.0</value>
-          <nature>4</nature>
-        </field-data>
       </fieldData>
       <name>p</name>
       <isModify>false</isModify>
