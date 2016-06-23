@@ -7,7 +7,6 @@ import org.chtijbug.example.swimmingpool.Quote;
 rule "CalcAgeFromCurrentDate"
 	dialect "mvel"
 	ruleflow-group "init"
-	no-loop true
 	when
 		pp : Person( bdate : birthdate != null , age == ( -1 ) )
 		Quote( curDate : quoteDate != null )
