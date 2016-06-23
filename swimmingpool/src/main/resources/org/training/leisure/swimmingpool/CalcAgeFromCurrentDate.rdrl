@@ -12,7 +12,6 @@ rule "CalcAgeFromCurrentDate"
 		Quote( quoteDate != null )
 	then
 		modify( pp ) {
-				setAge( AgeCalculationYear(bdate,curDate) ), 
-				setStandardPrice( new BigDecimal("-1.0")    )
+				setAge( AgeCalculationYear(bdate,curDate) )
 		}
 end
