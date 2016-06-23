@@ -11,7 +11,6 @@ rule "isPersonBirthday"
 	when
 		pper : Person( bd : birthdate != null )
 		Quote( qd : quoteDate != null )
-		not (cc : CalculatedAttribute( key == "IsPersonBirthday" ) and Person( calculatedAttributeList contains cc )) 
 	then
 		CalculatedAttribute ica = new CalculatedAttribute();
 		ica.setKey( "IsPersonBirthday" );
