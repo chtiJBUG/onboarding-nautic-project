@@ -9,7 +9,7 @@ rule "CalcAgeFromCurrentDate"
 	ruleflow-group "init"
 	when
 		pp : Person( bdate : birthdate != null , age == -1.0 )
-		Quote( quoteDate != null )
+		Quote( curDate : quoteDate != null )
 	then
 		modify( pp ) {
 				setAge( AgeCalculationYear(bdate,curDate) )
