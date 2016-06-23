@@ -8,7 +8,7 @@ rule "CalcAgeFromCurrentDate"
 	dialect "mvel"
 	ruleflow-group "init"
 	when
-		pp : Person( bdate : birthdate != null , age == -1.0 )
+		pp : Person( bdate : birthdate != null )
 		Quote( curDate : quoteDate != null )
 	then
 		modify( pp ) {
