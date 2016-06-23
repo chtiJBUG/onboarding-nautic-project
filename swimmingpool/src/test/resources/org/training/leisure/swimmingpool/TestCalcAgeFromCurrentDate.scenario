@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>30-May-1986</value>
+          <value>01-Dec-1985</value>
           <nature>1</nature>
         </field-data>
         <field-data>
@@ -25,7 +25,7 @@
       <fieldData>
         <field-data>
           <name>quoteDate</name>
-          <value>30-Jun-2016</value>
+          <value>01-Jun-2016</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -36,11 +36,25 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>79</executionTimeResult>
+      <executionTimeResult>57</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>age</fieldName>
+          <expected>30.5</expected>
+          <successResult>true</successResult>
+          <explanation>[p] field [age] was [30.5].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>p</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-23 10:20:31.914 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 10:26:44.615 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
