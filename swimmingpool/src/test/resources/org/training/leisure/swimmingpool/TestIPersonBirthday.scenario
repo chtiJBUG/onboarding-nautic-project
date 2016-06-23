@@ -30,6 +30,18 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <fact-data>
+      <type>Person</type>
+      <fieldData>
+        <field-data>
+          <name>birthdate</name>
+          <value>06-Mar-2016</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>p2</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
       <executionTimeResult>110</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
