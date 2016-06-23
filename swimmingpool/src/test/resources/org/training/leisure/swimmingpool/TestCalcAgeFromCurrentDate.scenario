@@ -31,17 +31,17 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>66</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>15</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>age</fieldName>
           <expected>30.5</expected>
-          <actualResult>-1.0</actualResult>
-          <successResult>true</successResult>
-          <explanation>[p] field [age] was [30.5].</explanation>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[p] field [age] was [0.0] expected [30.5].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -52,12 +52,12 @@
     <expect-rule>
       <ruleName>CalcAgeFromCurrentDate</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [CalcAgeFromCurrentDate] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [CalcAgeFromCurrentDate] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-23 15:02:37.642 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 15:16:19.254 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
