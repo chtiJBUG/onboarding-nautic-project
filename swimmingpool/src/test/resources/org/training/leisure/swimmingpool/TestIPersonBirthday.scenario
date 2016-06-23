@@ -35,15 +35,27 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>06-Mar-2016</value>
+          <value>30-Jun-1985</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
       <name>p2</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Person</type>
+      <fieldData>
+        <field-data>
+          <name>birthdate</name>
+          <value>30-Jun-1984</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>p3</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>110</executionTimeResult>
+      <executionTimeResult>70</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -51,9 +63,9 @@
         <expect-field>
           <fieldName>stringValue</fieldName>
           <expected>true</expected>
-          <actualResult>No match</actualResult>
-          <successResult>true</successResult>
-          <explanation>[CalculatedAttribute] field [stringValue] was [true].</explanation>
+          <actualResult>false</actualResult>
+          <successResult>false</successResult>
+          <explanation>[CalculatedAttribute] field [stringValue] was [false] expected [true].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -69,7 +81,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-23 15:24:10.922 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 15:48:03.654 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
