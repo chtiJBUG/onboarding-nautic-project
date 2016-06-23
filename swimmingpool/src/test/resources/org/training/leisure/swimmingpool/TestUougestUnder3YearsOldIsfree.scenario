@@ -42,12 +42,15 @@
       <name>q</name>
       <isModify>false</isModify>
     </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>standard</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>75</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>18</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
   </fixtures>
-  <lastRunResult>2016-06-23 15:26:49.90 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 17:29:43.203 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
