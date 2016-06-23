@@ -1,9 +1,12 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import org.chtijbug.example.swimmingpool.Person;
+import java.util.List;
 
 rule "YougestOver3YearsOldFree"
 	dialect "mvel"
 	when
+		List( size() > 1 ) from collect ( Person( age >= 3.0 )) 
 	then
 end
