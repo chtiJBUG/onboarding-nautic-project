@@ -39,11 +39,8 @@
         <expect-field>
           <fieldName>stringValue</fieldName>
           <expected>true</expected>
-          <actualResult>No match</actualResult>
-          <successResult>true</successResult>
-          <explanation>[CalculatedAttribute] field [stringValue] was [true].</explanation>
           <operator>==</operator>
-          <nature>1</nature>
+          <nature>0</nature>
         </expect-field>
       </fieldValues>
       <name>CalculatedAttribute</name>
