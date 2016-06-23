@@ -11,6 +11,16 @@
           <value>30-Jun-2016</value>
           <nature>1</nature>
         </field-data>
+        <field-data>
+          <name>personList</name>
+          <collectionFieldList>
+            <field-data>
+              <name>personList</name>
+              <value>=[p,p2,p3]</value>
+              <nature>4</nature>
+            </field-data>
+          </collectionFieldList>
+        </field-data>
       </fieldData>
       <name>q</name>
       <isModify>false</isModify>
@@ -35,7 +45,7 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>30-Jun-1985</value>
+          <value>29-Jun-1985</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -47,7 +57,7 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>30-Jun-1984</value>
+          <value>28-Jun-1984</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -55,7 +65,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>70</executionTimeResult>
+      <executionTimeResult>72</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -81,7 +91,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-23 15:48:03.654 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 16:55:08.894 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
