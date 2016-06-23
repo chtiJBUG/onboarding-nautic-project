@@ -43,11 +43,11 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>74</executionTimeResult>
+      <executionTimeResult>69</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
   </fixtures>
-  <lastRunResult>2016-06-23 14:29:15.698 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 15:03:29.400 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
