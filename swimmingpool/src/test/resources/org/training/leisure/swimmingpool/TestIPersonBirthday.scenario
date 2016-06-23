@@ -55,8 +55,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>62</executionTimeResult>
-      <numberOfRulesFired>2</numberOfRulesFired>
+      <executionTimeResult>71</executionTimeResult>
+      <numberOfRulesFired>4</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -75,13 +75,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>isPersonBirthday</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [isPersonBirthday] activated 1 times.</explanation>
+      <expectedCount>3</expectedCount>
+      <explanation>Rule [isPersonBirthday] activated 3 times.</explanation>
       <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <actualResult>3</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-23 17:08:41.587 UTC</lastRunResult>
+  <lastRunResult>2016-06-23 17:18:00.165 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
