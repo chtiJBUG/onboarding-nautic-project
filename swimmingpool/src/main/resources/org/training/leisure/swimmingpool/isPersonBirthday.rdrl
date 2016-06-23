@@ -15,7 +15,7 @@ rule "isPersonBirthday"
 	then
 		CalculatedAttribute ica = new CalculatedAttribute();
 		ica.setKey( "IsPersonBirthday" );
-		ica.setStringValue( =new Boolean(isBirthday(bd,qd)).toString() );
+		ica.setStringValue( new Boolean(isBirthday(bd,qd)).toString() );
 		insert( ica );
 		pper.getCalculatedAttributeList().add(ica);
 		modify( pper ) {
