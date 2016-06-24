@@ -63,9 +63,33 @@
       <name>i1</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>Person</type>
+      <fieldData>
+        <field-data>
+          <name>birthdate</name>
+          <value>23-Aug-1972</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>p3</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>Person</type>
+      <fieldData>
+        <field-data>
+          <name>birthdate</name>
+          <value>23-Aug-1976</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>p4</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>126</executionTimeResult>
-      <numberOfRulesFired>6</numberOfRulesFired>
+      <executionTimeResult>114</executionTimeResult>
+      <numberOfRulesFired>9</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -97,7 +121,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-24 12:16:52.243 UTC</lastRunResult>
+  <lastRunResult>2016-06-24 12:44:39.761 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
