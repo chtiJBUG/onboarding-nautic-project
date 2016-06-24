@@ -7,5 +7,5 @@ rule "StartProcessRule"
 	when
 		StartProcess( pId : processId != null )
 	then
-		kcontext.getKnowledgeRuntime()..startProcess(pId);
+		kcontext.getKnowledgeRuntime().startProcess(pId);
 end
