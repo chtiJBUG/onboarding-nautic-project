@@ -120,6 +120,10 @@
       <name>p2</name>
       <anonymous>false</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>YougestUnder3YearsOldFree</ruleName>
+      <expectedCount>1</expectedCount>
+    </expect-rule>
   </fixtures>
   <lastRunResult>2016-06-24 12:44:39.761 UTC</lastRunResult>
   <rules/>
