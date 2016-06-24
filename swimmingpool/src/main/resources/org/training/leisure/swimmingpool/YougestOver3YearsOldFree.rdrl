@@ -9,6 +9,7 @@ import org.chtijbug.example.swimmingpool.PriceType;
 
 rule "YougestOver3YearsOldFree"
 	dialect "mvel"
+	ruleflow-group "promotion"
 	when
 		List( size() > 1 ) from collect ( Person( age >= 3.0 )) 
 		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
