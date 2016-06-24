@@ -20,7 +20,7 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>25-Oct-2012</value>
+          <value>23-Nov-2012</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -32,7 +32,7 @@
       <fieldData>
         <field-data>
           <name>quoteDate</name>
-          <value>15-Jun-2016</value>
+          <value>23-May-2016</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -60,15 +60,44 @@
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>per</name>
+      <name>per1</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>183</executionTimeResult>
+      <executionTimeResult>89</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>age</fieldName>
+          <expected>47.75</expected>
+          <successResult>true</successResult>
+          <explanation>[p1] field [age] was [47.75].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>p1</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>age</fieldName>
+          <expected>3.5</expected>
+          <actualResult>3.5</actualResult>
+          <successResult>true</successResult>
+          <explanation>[p2] field [age] was [3.5].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>p2</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-24 09:21:31.42 UTC</lastRunResult>
+  <lastRunResult>2016-06-24 10:00:26.256 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
