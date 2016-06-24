@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "StartProcessRule"
 	dialect "mvel"
 	when
-		StartProcess( processId != null )
+		StartProcess( pId : processId != null )
 	then
 		kcontext.getKnowledgeRuntime()..startProcess(pId);
 end
