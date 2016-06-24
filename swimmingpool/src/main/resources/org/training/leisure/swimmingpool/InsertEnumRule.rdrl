@@ -5,7 +5,8 @@ import java.lang.Number;
 rule "InsertEnumRule"
 	dialect "mvel"
 	when
-		InsertPeriod( enumValue != null )
+		InsertPeriod( eVal : enumValue != null )
 	then
 		Period period = new Period();
+		period.setSeasonType(SeasonType.valueOf(eVal));
 end
