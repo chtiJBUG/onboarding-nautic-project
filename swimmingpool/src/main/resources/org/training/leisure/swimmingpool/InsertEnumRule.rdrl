@@ -8,7 +8,7 @@ rule "InsertEnumRule"
 	when
 		InsertPeriod( eVal : enumValue != null )
 	then
-		Period period = new Period();
-		period.setSeasonType(SeasonType.valueOf(eVal));
-		insert(period);
+		Period p= new Period();
+		p.setSeasonType(SeasonType.vlaueOf(eVal));
+		insert(p);
 end
