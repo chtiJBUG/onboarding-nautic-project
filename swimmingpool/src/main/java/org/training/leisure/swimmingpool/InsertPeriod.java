@@ -29,7 +29,7 @@ public class InsertPeriod implements java.io.Serializable
    {
       this.enumValue = enumValue;
    }
-@Override
+    @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("InsertPeriod{");
         sb.append("enumValue=").append(enumValue);
