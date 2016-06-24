@@ -51,18 +51,6 @@
       <name>sp</name>
       <isModify>false</isModify>
     </fact-data>
-    <fact-data>
-      <type>Period</type>
-      <fieldData>
-        <field-data>
-          <name>seasonType</name>
-          <value>SeasonType.week</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>per1</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
       <executionTimeResult>122</executionTimeResult>
       <numberOfRulesFired>5</numberOfRulesFired>
