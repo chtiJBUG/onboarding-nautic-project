@@ -7,7 +7,7 @@ import org.chtijbug.example.swimmingpool.Price;
 import org.chtijbug.example.swimmingpool.CalculatedAttribute;
 import org.chtijbug.example.swimmingpool.PriceType;
 
-rule "CopyNotTODo"
+rule "YougestUnder3YearsOldFree"
 	dialect "mvel"
 	ruleflow-group "promotion"
 	when
