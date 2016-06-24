@@ -11,10 +11,9 @@ rule "YougestOver3YearsOldFree"
 	dialect "mvel"
 	ruleflow-group "promotion"
 	when
-		List( size() > 1 ) from collect ( Person( age >= 3.0 )) 
 		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
 			min(aage)) 
-		aPerson : Person( age == ( nn ) , Sprice : standardPrice != -1.0B )
+		aPerson : Person( age == ( nn ) , Sprice : standardPrice != ( -1.0B ) )
 	then
 		Price aPrice = new Price();
 		aPrice.setDescription( "YougestOver3YearsOldFree" );
