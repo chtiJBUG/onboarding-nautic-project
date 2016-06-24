@@ -97,7 +97,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-24 10:00:26.256 UTC</lastRunResult>
+  <lastRunResult>2016-06-24 10:01:29.67 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
