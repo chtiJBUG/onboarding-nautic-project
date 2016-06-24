@@ -10,4 +10,5 @@ rule "InsertEnumRule"
 	then
 		Period period = new Period();
 		period.setSeasonType(SeasonType.valueOf(eVal));
+		insert(period);
 end
