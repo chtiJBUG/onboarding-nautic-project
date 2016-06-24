@@ -3,7 +3,7 @@ package org.training.leisure.swimmingpool;
 import java.lang.Number;
 
 rule "InsertEnumRule"
-	dialect "mvel"
+	dialect "java"
 	when
 		InsertPeriod( eVal : enumValue != null )
 	then
