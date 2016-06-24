@@ -88,8 +88,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>114</executionTimeResult>
-      <numberOfRulesFired>9</numberOfRulesFired>
+      <executionTimeResult>338</executionTimeResult>
+      <numberOfRulesFired>15</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -123,9 +123,12 @@
     <expect-rule>
       <ruleName>YougestUnder3YearsOldFree</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [YougestUnder3YearsOldFree] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-24 12:44:39.761 UTC</lastRunResult>
+  <lastRunResult>2016-06-24 12:57:30.39 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
@@ -139,6 +142,9 @@
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>org.chtijbug.example.swimmingpool.Period</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.chtijbug.example.swimmingpool.Price</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
