@@ -6,4 +6,5 @@ rule "StartProcess"
 	dialect "mvel"
 	when
 	then
+		kcontext.getKnowledgeRuntime().start
 end
