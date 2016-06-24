@@ -2,9 +2,8 @@ package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
 
-rule "StartProcess"
+rule "StartProcessRule"
 	dialect "mvel"
 	when
 	then
-		
 end
