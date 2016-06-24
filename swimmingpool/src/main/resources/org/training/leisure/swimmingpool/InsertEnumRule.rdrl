@@ -5,6 +5,7 @@ import org.chtijbug.example.swimmingpool.SeasonType;
 
 rule "InsertEnumRule"
 	dialect "java"
+	salience 100
 	when
 		InsertPeriod( eVal : enumValue != null )
 	then
