@@ -53,13 +53,19 @@
     </fact-data>
     <fact-data>
       <type>Period</type>
-      <fieldData/>
+      <fieldData>
+        <field-data>
+          <name>seasonType</name>
+          <value>SeasonType.week</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
       <name>per1</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>89</executionTimeResult>
-      <numberOfRulesFired>6</numberOfRulesFired>
+      <executionTimeResult>122</executionTimeResult>
+      <numberOfRulesFired>5</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -91,7 +97,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-24 10:05:13.548 UTC</lastRunResult>
+  <lastRunResult>2016-06-24 10:07:24.224 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
