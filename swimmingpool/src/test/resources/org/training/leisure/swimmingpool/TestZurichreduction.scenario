@@ -64,8 +64,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>180</executionTimeResult>
-      <numberOfRulesFired>15</numberOfRulesFired>
+      <executionTimeResult>113</executionTimeResult>
+      <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -82,14 +82,19 @@
       <anonymous>false</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>YougestUnder3YearsOldFree</ruleName>
+      <ruleName>ZurichReduction</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [YougestUnder3YearsOldFree] activated 1 times.</explanation>
+      <explanation>Rule [ZurichReduction] activated 1 times.</explanation>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
+    <expect-fact>
+      <fieldValues/>
+      <name>Price</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-27 09:55:46.210 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 10:02:46.166 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
