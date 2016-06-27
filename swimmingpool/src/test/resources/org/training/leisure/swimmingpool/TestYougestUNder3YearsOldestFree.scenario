@@ -16,18 +16,6 @@
       <isModify>false</isModify>
     </fact-data>
     <fact-data>
-      <type>Person</type>
-      <fieldData>
-        <field-data>
-          <name>birthdate</name>
-          <value>23-Nov-2012</value>
-          <nature>1</nature>
-        </field-data>
-      </fieldData>
-      <name>p2</name>
-      <isModify>false</isModify>
-    </fact-data>
-    <fact-data>
       <type>Quote</type>
       <fieldData>
         <field-data>
@@ -63,32 +51,8 @@
       <name>i1</name>
       <isModify>false</isModify>
     </fact-data>
-    <fact-data>
-      <type>Person</type>
-      <fieldData>
-        <field-data>
-          <name>birthdate</name>
-          <value>23-Aug-1972</value>
-          <nature>1</nature>
-        </field-data>
-      </fieldData>
-      <name>p3</name>
-      <isModify>false</isModify>
-    </fact-data>
-    <fact-data>
-      <type>Person</type>
-      <fieldData>
-        <field-data>
-          <name>birthdate</name>
-          <value>23-Aug-1976</value>
-          <nature>1</nature>
-        </field-data>
-      </fieldData>
-      <name>p4</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
-      <executionTimeResult>115</executionTimeResult>
+      <executionTimeResult>180</executionTimeResult>
       <numberOfRulesFired>15</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -105,21 +69,6 @@
       <name>p1</name>
       <anonymous>false</anonymous>
     </expect-fact>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>age</fieldName>
-          <expected>3.5</expected>
-          <actualResult>3.5</actualResult>
-          <successResult>true</successResult>
-          <explanation>[p2] field [age] was [3.5].</explanation>
-          <operator>==</operator>
-          <nature>1</nature>
-        </expect-field>
-      </fieldValues>
-      <name>p2</name>
-      <anonymous>false</anonymous>
-    </expect-fact>
     <expect-rule>
       <ruleName>YougestUnder3YearsOldFree</ruleName>
       <expectedCount>1</expectedCount>
@@ -128,7 +77,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-27 09:31:59.482 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 09:55:46.210 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
@@ -145,6 +94,9 @@
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>org.chtijbug.example.swimmingpool.Price</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.chtijbug.example.swimmingpool.Address</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
