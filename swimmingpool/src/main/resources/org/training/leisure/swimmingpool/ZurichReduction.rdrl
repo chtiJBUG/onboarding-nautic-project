@@ -1,9 +1,24 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import org.chtijbug.example.swimmingpool.Person;
+import org.chtijbug.example.swimmingpool.Address;
+import org.chtijbug.example.swimmingpool.Price;
 
 rule "ZurichReduction"
 	dialect "mvel"
 	when
+		pper : Person( sprice : standardPrice > 0.0B )
+		not (pprice : Price( description == "ZurichReduction" ) and Person( this == pper , priceList contains pprice )) 
+		Address( cityName == "zurich" || cityName == "Zurich" || cityName == "Zürich" || cityName == "zürich" )
 	then
+		Price fact0 = new Price();
+		fact0.setDescription( "ZurichReduction" );
+		fact0.setAmount( sprice.divide(new BigDecimal("-10.0"),BigDecimal.ROUND_HALF_DOWN) );
+		fact0.setPriceType( PriceType.promotion );
+		insert( fact0 );
+		pper.addPrice( nprice );
+		modify( pper ) {
+
+		}
 end
