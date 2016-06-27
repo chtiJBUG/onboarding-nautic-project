@@ -1,5 +1,5 @@
 <scenario>
-  <name>TestZurichreduction.scenario</name>
+  <name>TestBirthdayReduction.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>birthdate</name>
-          <value>23-Aug-1968</value>
+          <value>23-May-1968</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
