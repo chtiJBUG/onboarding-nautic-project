@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>157</executionTimeResult>
+      <executionTimeResult>117</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -61,8 +61,8 @@
           <fieldName>age</fieldName>
           <expected>48</expected>
           <actualResult>48.0</actualResult>
-          <successResult>false</successResult>
-          <explanation>[p1] field [age] was [48.0] expected [47.75].</explanation>
+          <successResult>true</successResult>
+          <explanation>[p1] field [age] was [48].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -81,9 +81,9 @@
     </expect-fact>
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
-      <expectedCount>1</expectedCount>
-      <explanation>Rule [ZurichReduction] activated 0 times. Expected 1 times.</explanation>
-      <successResult>false</successResult>
+      <explanation>Rule [ZurichReduction] was not activated.</explanation>
+      <expectedFire>false</expectedFire>
+      <successResult>true</successResult>
       <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
@@ -99,7 +99,7 @@
         </expect-field>
         <expect-field>
           <fieldName>description</fieldName>
-          <expected>ZurichReduction</expected>
+          <expected>BirthdayReduction</expected>
           <actualResult>BirthdayReduction</actualResult>
           <successResult>false</successResult>
           <explanation>[Price] field [description] was [BirthdayReduction] expected [ZurichReduction].</explanation>
@@ -110,8 +110,15 @@
       <name>Price</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>BirthdayReduction</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [BirthdayReduction] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-27 13:06:24.895 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 13:07:20.374 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
