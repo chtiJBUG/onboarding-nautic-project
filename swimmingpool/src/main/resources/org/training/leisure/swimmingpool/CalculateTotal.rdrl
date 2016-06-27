@@ -14,8 +14,8 @@ rule "CalculateTotal"
 		stdtPrice : BigDecimal( ) from accumulate ( Person( standardPrice != null , sPrice : standardPrice != -1.0B ),
 			sum(sPrice)) 
 	then
-		Price fact0 = new Price();
-		fact0.setPriceType( PriceType.definitive );
-		fact0.setAmount( promoPrice.add(stdtPrice) );
-		insert( fact0 );
+		Price definitivePrice = new Price();
+		definitivePrice.setPriceType( PriceType.definitive );
+		definitivePrice.setAmount( promoPrice.add(stdtPrice) );
+		insert( definitivePrice );
 end
