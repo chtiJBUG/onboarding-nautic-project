@@ -10,5 +10,12 @@ rule "CalculateTotal"
 	when
 		promoPrice : BigDecimal( ) from accumulate ( Price( priceType != PriceType.definitive , am : amount != null ),
 			sum(am)) 
+		not (Price( priceType == PriceType.definitive )) 
+		stdtPrice : BigDecimal( ) from accumulate ( Person( standardPrice != null , sPrice : standardPrice != -1.0B ),
+			sum(sPrice)) 
 	then
+		Price fact0 = new Price();
+		fact0.setPriceType( PriceType.definitive );
+		fact0.setAmount( promoPrice.add(stdtPrice) );
+		insert( fact0 );
 end
