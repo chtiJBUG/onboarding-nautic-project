@@ -2,6 +2,7 @@ package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
 import org.chtijbug.example.swimmingpool.SeasonType;
+import org.chtijbug.example.swimmingpool.Period;
 
 rule "InsertEnumRule"
 	dialect "java"
