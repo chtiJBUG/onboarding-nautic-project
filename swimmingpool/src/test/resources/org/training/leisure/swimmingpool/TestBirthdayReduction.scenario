@@ -44,7 +44,7 @@
       <fieldData>
         <field-data>
           <name>enumValue</name>
-          <value>week</value>
+          <value>day</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>117</executionTimeResult>
+      <executionTimeResult>212</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -100,9 +100,9 @@
         <expect-field>
           <fieldName>description</fieldName>
           <expected>BirthdayReduction</expected>
-          <actualResult>BirthdayReduction</actualResult>
-          <successResult>false</successResult>
-          <explanation>[Price] field [description] was [BirthdayReduction] expected [ZurichReduction].</explanation>
+          <actualResult>No match</actualResult>
+          <successResult>true</successResult>
+          <explanation>[Price] field [description] was [BirthdayReduction].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -118,7 +118,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-27 13:07:20.374 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 13:12:45.483 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
