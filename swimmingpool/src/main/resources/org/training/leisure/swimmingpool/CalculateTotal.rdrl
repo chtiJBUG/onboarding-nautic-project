@@ -1,9 +1,14 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import java.math.BigDecimal;
+import org.chtijbug.example.swimmingpool.Price;
+import org.chtijbug.example.swimmingpool.Person;
 
 rule "CalculateTotal"
 	dialect "mvel"
 	when
+		promoPrice : BigDecimal( ) from accumulate ( Price( priceType != PriceType.definitive , am : amount != null ),
+			sum(am)) 
 	then
 end
