@@ -10,7 +10,7 @@ rule "ZurichReduction"
 	dialect "mvel"
 	ruleflow-group "reduction"
 	when
-		pper : Person( sprice : standardPrice > 0.0B )
+		pper : Person( sprice : standardPrice > 0.0B , standardPrice != -1.0B )
 		not (pprice : Price( description == "ZurichReduction" ) and Person( this == pper , priceList contains pprice )) 
 		Address( cityName == "zurich" || cityName == "Zurich" || cityName == "Zürich" || cityName == "zürich" )
 	then
