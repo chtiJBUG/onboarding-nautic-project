@@ -1,9 +1,24 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
+import org.chtijbug.example.swimmingpool.CalculatedAttribute;
+import org.chtijbug.example.swimmingpool.Price;
+import org.chtijbug.example.swimmingpool.Person;
 
 rule "BirthdayReduction"
 	dialect "mvel"
 	when
+		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" )
+		pper : Person( calculatedAttributeList contains ccat , standardPrice > 0.0B )
+		not (pprice : Price( description == "BirthdayReduction" ) and Person( priceList contains pprice , this == pper )) 
 	then
+		Price nprice = new Price();
+		nprice.setDescription( "BirthdayReduction" );
+		nprice.setAmount( sprice.divide(new BigDecimal("-10.0"),BigDecimal.ROUND_HALF_DOWN) );
+		nprice.setPriceType( PriceType.promotion );
+		insert( nprice );
+		pper.addPrice( nprice );
+		modify( pper ) {
+
+		}
 end
