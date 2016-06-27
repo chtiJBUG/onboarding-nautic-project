@@ -64,7 +64,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>344</executionTimeResult>
+      <executionTimeResult>131</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -76,6 +76,15 @@
           <explanation>[p1] field [age] was [47.75].</explanation>
           <operator>==</operator>
           <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>standardPrice</fieldName>
+          <expected></expected>
+          <actualResult>12</actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [standardPrice] was [12] expected [].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
         </expect-field>
       </fieldValues>
       <name>p1</name>
@@ -102,15 +111,18 @@
         <expect-field>
           <fieldName>description</fieldName>
           <expected>yuiyui</expected>
+          <actualResult>ZurichReduction</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Price] field [description] was [ZurichReduction] expected [yuiyui].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Price</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-27 12:43:44.956 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 12:45:28.392 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
