@@ -14,11 +14,11 @@ rule "ZurichReduction"
 		not (pprice : Price( description == "ZurichReduction" ) and Person( this == pper , priceList contains pprice )) 
 		Address( cityName == "zurich" || cityName == "Zurich" || cityName == "Zürich" || cityName == "zürich" )
 	then
-		Price fact0 = new Price();
-		fact0.setDescription( "ZurichReduction" );
-		fact0.setAmount( sprice.divide(new BigDecimal("-10.0"),BigDecimal.ROUND_HALF_DOWN) );
-		fact0.setPriceType( PriceType.promotion );
-		insert( fact0 );
+		Price nprice = new Price();
+		nprice.setDescription( "ZurichReduction" );
+		nprice.setAmount( sprice.divide(new BigDecimal("-10.0"),BigDecimal.ROUND_HALF_DOWN) );
+		nprice.setPriceType( PriceType.promotion );
+		insert( nprice );
 		pper.addPrice( nprice );
 		modify( pper ) {
 
