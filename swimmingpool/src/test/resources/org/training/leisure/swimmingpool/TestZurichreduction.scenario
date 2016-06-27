@@ -64,8 +64,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>153</executionTimeResult>
-      <numberOfRulesFired>5</numberOfRulesFired>
+      <executionTimeResult>277</executionTimeResult>
+      <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -93,9 +93,9 @@
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [ZurichReduction] activated 0 times. Expected 1 times.</explanation>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <explanation>Rule [ZurichReduction] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
@@ -103,8 +103,8 @@
           <fieldName>amount</fieldName>
           <expected>-2</expected>
           <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [Price] was not found in the results.</explanation>
+          <successResult>true</successResult>
+          <explanation>[Price] field [amount] was [-2].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -112,8 +112,8 @@
           <fieldName>description</fieldName>
           <expected>ZurichReduction</expected>
           <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [Price] was not found in the results.</explanation>
+          <successResult>true</successResult>
+          <explanation>[Price] field [description] was [ZurichReduction].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -122,7 +122,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-27 12:48:36.300 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 12:50:25.839 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
