@@ -1,5 +1,5 @@
 <scenario>
-  <name>TestBirthdayReduction.scenario</name>
+  <name>TestTotalCalculation.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>121</executionTimeResult>
+      <executionTimeResult>114</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -122,8 +122,30 @@
       <name>Period</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>priceType</fieldName>
+          <expected>PriceType.definitive</expected>
+          <actualResult>promotion</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Price] field [priceType] was [promotion] expected [PriceType.definitive].</explanation>
+          <operator>==</operator>
+          <nature>4</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Price</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+    <expect-rule>
+      <ruleName>CalculateTotal</ruleName>
+      <expectedCount>1</expectedCount>
+      <explanation>Rule [CalculateTotal] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-27 13:55:05.361 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 14:46:19.488 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
