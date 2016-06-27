@@ -51,36 +51,25 @@
       <name>i1</name>
       <isModify>false</isModify>
     </fact-data>
-    <fact-data>
-      <type>Address</type>
-      <fieldData>
-        <field-data>
-          <name>cityName</name>
-          <value>zurich</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>aa</name>
-      <isModify>false</isModify>
-    </fact-data>
     <execution-trace>
-      <executionTimeResult>277</executionTimeResult>
+      <executionTimeResult>157</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>age</fieldName>
-          <expected>47.75</expected>
-          <successResult>true</successResult>
-          <explanation>[p1] field [age] was [47.75].</explanation>
+          <expected>48</expected>
+          <actualResult>48.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[p1] field [age] was [48.0] expected [47.75].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>standardPrice</fieldName>
           <expected>25</expected>
-          <actualResult>25</actualResult>
+          <actualResult>-1.0</actualResult>
           <successResult>true</successResult>
           <explanation>[p1] field [standardPrice] was [25].</explanation>
           <operator>==</operator>
@@ -93,9 +82,9 @@
     <expect-rule>
       <ruleName>ZurichReduction</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [ZurichReduction] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [ZurichReduction] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
@@ -111,9 +100,9 @@
         <expect-field>
           <fieldName>description</fieldName>
           <expected>ZurichReduction</expected>
-          <actualResult>No match</actualResult>
-          <successResult>true</successResult>
-          <explanation>[Price] field [description] was [ZurichReduction].</explanation>
+          <actualResult>BirthdayReduction</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Price] field [description] was [BirthdayReduction] expected [ZurichReduction].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -122,7 +111,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-27 12:50:25.839 UTC</lastRunResult>
+  <lastRunResult>2016-06-27 13:06:24.895 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
