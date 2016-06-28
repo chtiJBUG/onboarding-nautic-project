@@ -12,7 +12,7 @@ rule "CalculateTotal"
 		not (Price( priceType == PriceType.definitive )) 
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sPrice : standardPrice != null ),
 			sum(sPrice)) 
-		reductPrice : BigDecimal( ) from accumulate ( Price( aa : amount != null , priceType != null ),
+		reductPrice : BigDecimal( ) from accumulate ( Price( aa : amount != null ),
 			sum(aa)) 
 	then
 		Price definitivePrice = new Price();
