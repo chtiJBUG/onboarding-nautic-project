@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>244</executionTimeResult>
+      <executionTimeResult>258</executionTimeResult>
       <numberOfRulesFired>7</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -91,7 +91,7 @@
         <expect-field>
           <fieldName>amount</fieldName>
           <expected>-1</expected>
-          <actualResult></actualResult>
+          <actualResult>11.0</actualResult>
           <successResult>true</successResult>
           <explanation>[Price] field [amount] was [-1].</explanation>
           <operator>==</operator>
@@ -118,11 +118,6 @@
       <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
-      <fieldValues/>
-      <name>Period</name>
-      <anonymous>true</anonymous>
-    </expect-fact>
-    <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>priceType</fieldName>
@@ -131,7 +126,13 @@
           <successResult>false</successResult>
           <explanation>[Price] field [priceType] was [promotion] expected [PriceType.definitive].</explanation>
           <operator>==</operator>
-          <nature>1</nature>
+          <nature>4</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>amount</fieldName>
+          <expected>11.0</expected>
+          <operator>==</operator>
+          <nature>0</nature>
         </expect-field>
       </fieldValues>
       <name>Price</name>
@@ -145,7 +146,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 09:16:38.472 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 09:32:45.741 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
