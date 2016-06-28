@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import org.chtijbug.example.swimmingpool.Price;
 import org.chtijbug.example.swimmingpool.Person;
 
-rule "CalculateTotal"
+rule "pipo2"
 	dialect "mvel"
 	ruleflow-group "subscription"
 	when
