@@ -9,11 +9,11 @@ rule "CalculateTotal"
 	dialect "mvel"
 	ruleflow-group "subscription"
 	when
-		promoPrice : BigDecimal( ) from accumulate ( Price( am : amount != null , priceType != PriceType.definitive ),
-			sum(am)) 
 		not (Price( priceType == PriceType.definitive )) 
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sPrice : standardPrice != null ),
 			sum(sPrice)) 
+		promoPrice : BigDecimal( ) from accumulate ( Price( am : amount != null , priceType != PriceType.definitive ),
+			sum(am)) 
 	then
 		Price definitivePrice = new Price();
 		definitivePrice.setPriceType( PriceType.definitive );
