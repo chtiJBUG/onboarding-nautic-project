@@ -12,6 +12,7 @@ rule "pipo"
 		not (Price( priceType == PriceType.definitive )) 
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sPrice : standardPrice != null ),
 			sum(sPrice)) 
+		exists (Price( priceType == PriceType.promotion )) 
 	then
 		Price definitivePrice = new Price();
 		definitivePrice.setPriceType( PriceType.definitive );
