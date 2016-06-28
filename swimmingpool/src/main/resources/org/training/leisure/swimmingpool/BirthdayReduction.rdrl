@@ -22,6 +22,6 @@ rule "BirthdayReduction"
 		insert( nprice );
 		pper.addPrice( nprice );
 		modify( pper ) {
-
+				setPriceList( pper.getPriceList() )
 		}
 end
