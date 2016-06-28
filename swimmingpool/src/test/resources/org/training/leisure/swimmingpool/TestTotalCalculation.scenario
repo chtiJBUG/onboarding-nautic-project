@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>114</executionTimeResult>
+      <executionTimeResult>125</executionTimeResult>
       <numberOfRulesFired>6</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -91,7 +91,7 @@
         <expect-field>
           <fieldName>amount</fieldName>
           <expected>-1</expected>
-          <actualResult>-1</actualResult>
+          <actualResult></actualResult>
           <successResult>true</successResult>
           <explanation>[Price] field [amount] was [-1].</explanation>
           <operator>==</operator>
@@ -100,7 +100,7 @@
         <expect-field>
           <fieldName>description</fieldName>
           <expected>BirthdayReduction</expected>
-          <actualResult>No match</actualResult>
+          <actualResult></actualResult>
           <successResult>true</successResult>
           <explanation>[Price] field [description] was [BirthdayReduction].</explanation>
           <operator>==</operator>
@@ -131,7 +131,7 @@
           <successResult>false</successResult>
           <explanation>[Price] field [priceType] was [promotion] expected [PriceType.definitive].</explanation>
           <operator>==</operator>
-          <nature>4</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Price</name>
@@ -145,7 +145,7 @@
       <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-27 14:46:19.488 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 07:03:29.352 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
