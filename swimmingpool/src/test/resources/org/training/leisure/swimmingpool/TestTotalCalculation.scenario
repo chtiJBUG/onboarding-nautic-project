@@ -137,6 +137,12 @@
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
+        <expect-field>
+          <fieldName>priceType</fieldName>
+          <expected>PriceType.definitive</expected>
+          <operator>==</operator>
+          <nature>4</nature>
+        </expect-field>
       </fieldValues>
       <name>Price</name>
       <anonymous>true</anonymous>
@@ -149,7 +155,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 12:49:50.677 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 13:05:10.681 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
