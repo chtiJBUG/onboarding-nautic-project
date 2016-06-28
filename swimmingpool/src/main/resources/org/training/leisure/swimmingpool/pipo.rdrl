@@ -9,7 +9,7 @@ rule "pipo"
 	dialect "mvel"
 	ruleflow-group "subscription"
 	when
-		promoPrice : BigDecimal( ) from accumulate ( Price( am : amount != null , priceType != PriceType.definitive ),
+		promoPrice : BigDecimal( ) from accumulate ( Price( am : amount != null ),
 			sum(am)) 
 		not (Price( priceType == PriceType.definitive )) 
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sPrice : standardPrice != null ),
