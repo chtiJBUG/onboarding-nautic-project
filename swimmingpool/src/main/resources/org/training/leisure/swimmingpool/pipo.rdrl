@@ -1,0 +1,22 @@
+package org.training.leisure.swimmingpool;
+
+import java.lang.Number;
+import java.math.BigDecimal;
+import org.chtijbug.example.swimmingpool.Price;
+import org.chtijbug.example.swimmingpool.Person;
+
+rule "pipo"
+	dialect "mvel"
+	ruleflow-group "subscription"
+	when
+		promoPrice : BigDecimal( ) from accumulate ( Price( am : amount != null , priceType != PriceType.definitive ),
+			sum(am)) 
+		not (Price( priceType == PriceType.definitive )) 
+		stdtPrice : BigDecimal( ) from accumulate ( Person( sPrice : standardPrice != null ),
+			sum(sPrice)) 
+	then
+		Price definitivePrice = new Price();
+		definitivePrice.setPriceType( PriceType.definitive );
+		definitivePrice.setAmount( promoPrice.add(stdtPrice) );
+		insert( definitivePrice );
+end
