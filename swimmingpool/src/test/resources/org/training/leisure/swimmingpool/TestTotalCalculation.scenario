@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>258</executionTimeResult>
+      <executionTimeResult>127</executionTimeResult>
       <numberOfRulesFired>7</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -120,17 +120,17 @@
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>priceType</fieldName>
-          <expected>PriceType.definitive</expected>
-          <actualResult>promotion</actualResult>
-          <successResult>false</successResult>
-          <explanation>[Price] field [priceType] was [promotion] expected [PriceType.definitive].</explanation>
-          <operator>==</operator>
-          <nature>4</nature>
-        </expect-field>
-        <expect-field>
           <fieldName>amount</fieldName>
           <expected>11.0</expected>
+          <actualResult>-1</actualResult>
+          <successResult>true</successResult>
+          <explanation>[Price] field [amount] was [11.0].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>description</fieldName>
+          <expected>Final</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -146,7 +146,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 09:32:45.741 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 09:49:08.33 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
