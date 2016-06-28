@@ -128,7 +128,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-27 09:31:59.482 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 12:53:50.478 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
