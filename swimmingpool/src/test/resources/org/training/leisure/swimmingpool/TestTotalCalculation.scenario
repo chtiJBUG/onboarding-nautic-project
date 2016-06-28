@@ -52,8 +52,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>133</executionTimeResult>
-      <numberOfRulesFired>6</numberOfRulesFired>
+      <executionTimeResult>244</executionTimeResult>
+      <numberOfRulesFired>7</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -140,9 +140,12 @@
     <expect-rule>
       <ruleName>CalculateTotal</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [CalculateTotal] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 08:59:41.893 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 09:16:38.472 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
