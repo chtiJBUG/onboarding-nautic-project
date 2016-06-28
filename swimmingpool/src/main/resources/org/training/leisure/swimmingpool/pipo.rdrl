@@ -17,5 +17,6 @@ rule "pipo"
 	then
 		Price definitivePrice = new Price();
 		definitivePrice.setPriceType( PriceType.definitive );
+		definitivePrice.setAmount( reductPrice.add(stdtPrice) );
 		insert( definitivePrice );
 end
