@@ -40,19 +40,19 @@
       <isModify>false</isModify>
     </fact-data>
     <fact-data>
-      <type>InsertPeriod</type>
+      <type>Period</type>
       <fieldData>
         <field-data>
-          <name>enumValue</name>
-          <value>day</value>
+          <name>seasonType</name>
+          <value>SeasonType.day</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>i1</name>
+      <name>pp</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>127</executionTimeResult>
+      <executionTimeResult>137</executionTimeResult>
       <numberOfRulesFired>7</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -131,8 +131,11 @@
         <expect-field>
           <fieldName>description</fieldName>
           <expected>Final</expected>
+          <actualResult>BirthdayReduction</actualResult>
+          <successResult>true</successResult>
+          <explanation>[Price] field [description] was [Final].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Price</name>
@@ -146,7 +149,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 09:49:08.33 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 12:48:52.770 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
