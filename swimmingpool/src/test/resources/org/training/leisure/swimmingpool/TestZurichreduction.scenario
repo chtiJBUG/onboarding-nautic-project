@@ -52,15 +52,15 @@
       <isModify>false</isModify>
     </fact-data>
     <fact-data>
-      <type>Period</type>
+      <type>InsertPeriod</type>
       <fieldData>
         <field-data>
-          <name>seasonType</name>
-          <value>SeasonType.week</value>
+          <name>enumValue</name>
+          <value>week</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>per</name>
+      <name>pper</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
