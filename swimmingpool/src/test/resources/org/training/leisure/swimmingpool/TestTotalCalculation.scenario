@@ -40,19 +40,19 @@
       <isModify>false</isModify>
     </fact-data>
     <fact-data>
-      <type>Period</type>
+      <type>InsertPeriod</type>
       <fieldData>
         <field-data>
-          <name>seasonType</name>
-          <value>SeasonType.day</value>
+          <name>enumValue</name>
+          <value>day</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
-      <name>pp</name>
+      <name>per</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>137</executionTimeResult>
+      <executionTimeResult>107</executionTimeResult>
       <numberOfRulesFired>7</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -100,7 +100,7 @@
         <expect-field>
           <fieldName>description</fieldName>
           <expected>BirthdayReduction</expected>
-          <actualResult></actualResult>
+          <actualResult>Final</actualResult>
           <successResult>true</successResult>
           <explanation>[Price] field [description] was [BirthdayReduction].</explanation>
           <operator>==</operator>
@@ -140,8 +140,11 @@
         <expect-field>
           <fieldName>priceType</fieldName>
           <expected>PriceType.definitive</expected>
+          <actualResult>definitive</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Price] field [priceType] was [definitive] expected [PriceType.definitive].</explanation>
           <operator>==</operator>
-          <nature>4</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Price</name>
@@ -155,7 +158,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 13:05:10.681 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 13:35:28.384 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
