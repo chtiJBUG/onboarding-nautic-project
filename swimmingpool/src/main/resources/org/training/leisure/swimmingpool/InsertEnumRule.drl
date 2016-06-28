@@ -10,6 +10,6 @@ rule "InsertEnumRule"
         InsertPeriod(eVal: enumValue != null)
     then
         Period p = new Period();
-        p.setSeasonType(SeasonType.valueOf(eval));
+        p.setSeasonType(SeasonType.valueOf(eVal));
         insert (p);
 end
