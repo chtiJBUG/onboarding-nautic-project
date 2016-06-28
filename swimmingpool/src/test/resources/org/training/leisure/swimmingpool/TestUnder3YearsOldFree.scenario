@@ -88,8 +88,8 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>115</executionTimeResult>
-      <numberOfRulesFired>15</numberOfRulesFired>
+      <executionTimeResult>158</executionTimeResult>
+      <numberOfRulesFired>16</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
@@ -128,7 +128,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 12:53:50.478 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 13:30:51.549 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
