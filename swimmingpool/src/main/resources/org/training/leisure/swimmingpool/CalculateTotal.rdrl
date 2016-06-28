@@ -9,7 +9,7 @@ rule "CalculateTotal"
 	dialect "mvel"
 	ruleflow-group "subscription"
 	when
-		not (Price( priceType == PriceType.definitive )) 
+		not (Price( amount != null )) 
 		stdtPrice : BigDecimal( ) from accumulate ( Person( sPrice : standardPrice != null ),
 			sum(sPrice)) 
 		promoPrice : BigDecimal( ) from accumulate ( Price( am : amount != null , priceType != PriceType.definitive ),
