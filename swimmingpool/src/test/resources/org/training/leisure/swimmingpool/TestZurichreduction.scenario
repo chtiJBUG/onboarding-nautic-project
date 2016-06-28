@@ -40,18 +40,6 @@
       <isModify>false</isModify>
     </fact-data>
     <fact-data>
-      <type>InsertPeriod</type>
-      <fieldData>
-        <field-data>
-          <name>enumValue</name>
-          <value>week</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>i1</name>
-      <isModify>false</isModify>
-    </fact-data>
-    <fact-data>
       <type>Address</type>
       <fieldData>
         <field-data>
@@ -61,6 +49,18 @@
         </field-data>
       </fieldData>
       <name>aa</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>Period</type>
+      <fieldData>
+        <field-data>
+          <name>seasonType</name>
+          <value>SeasonType.week</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>per</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
@@ -122,7 +122,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-27 12:50:25.839 UTC</lastRunResult>
+  <lastRunResult>2016-06-28 12:54:35.582 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
