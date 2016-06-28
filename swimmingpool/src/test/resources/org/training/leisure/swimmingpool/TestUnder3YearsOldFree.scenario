@@ -52,18 +52,6 @@
       <isModify>false</isModify>
     </fact-data>
     <fact-data>
-      <type>InsertPeriod</type>
-      <fieldData>
-        <field-data>
-          <name>enumValue</name>
-          <value>day</value>
-          <nature>4</nature>
-        </field-data>
-      </fieldData>
-      <name>i1</name>
-      <isModify>false</isModify>
-    </fact-data>
-    <fact-data>
       <type>Person</type>
       <fieldData>
         <field-data>
@@ -85,6 +73,18 @@
         </field-data>
       </fieldData>
       <name>p4</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>Period</type>
+      <fieldData>
+        <field-data>
+          <name>seasonType</name>
+          <value>SeasonType.day</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>perd</name>
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
