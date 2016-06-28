@@ -26,5 +26,6 @@ rule "CalculateTotal"
 		Price definitivePrice = new Price();
 		definitivePrice.setPriceType( PriceType.definitive );
 		definitivePrice.setAmount( stdtPrice.add(reductValue) );
+		definitivePrice.setDescription( "Final" );
 		insert( definitivePrice );
 end
