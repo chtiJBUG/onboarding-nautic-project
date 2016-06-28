@@ -10,10 +10,18 @@ rule "CalculateTotal"
 	ruleflow-group "subscription"
 	when
 		not (Price( priceType == PriceType.definitive )) 
-		stdtPrice : BigDecimal( ) from accumulate ( Person( sPrice : standardPrice != null ),
-			sum(sPrice)) 
+		stdtPrice : BigDecimal( ) from accumulate ( Person( sp : standardPrice != null ),
+			init( BigDecimal res = new BigDecimal("0.0") ),
+			action( res = res.add(sp) ),
+			reverse( res = res.subtract(sp) ),
+			result( res )
+) 
 		reductValue : BigDecimal( ) from accumulate ( Price( aa : amount != null ),
-			sum(aa)) 
+			init( BigDecimal res = new BigDecimal("0.0") ),
+			action( res = res.add(aa) ),
+			reverse( res = res.subtract(aa) ),
+			result( res )
+) 
 	then
 		Price definitivePrice = new Price();
 		definitivePrice.setPriceType( PriceType.definitive );
