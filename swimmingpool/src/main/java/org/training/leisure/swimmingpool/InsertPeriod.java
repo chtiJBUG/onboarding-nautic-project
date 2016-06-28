@@ -9,25 +9,25 @@ public class InsertPeriod implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private java.lang.String enumName;
+   private java.lang.String enumValue;
 
    public InsertPeriod()
    {
    }
 
-   public java.lang.String getEnumName()
+   public java.lang.String getEnumValue()
    {
-      return this.enumName;
+      return this.enumValue;
    }
 
-   public void setEnumName(java.lang.String enumName)
+   public void setEnumValue(java.lang.String enumValue)
    {
-      this.enumName = enumName;
+      this.enumValue = enumValue;
    }
 
-   public InsertPeriod(java.lang.String enumName)
+   public InsertPeriod(java.lang.String enumValue)
    {
-      this.enumName = enumName;
+      this.enumValue = enumValue;
    }
 
 }
