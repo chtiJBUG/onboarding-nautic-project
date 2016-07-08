@@ -23,7 +23,7 @@
     <repository>
       <id>guvnor-m2-repo</id>
       <name>Guvnor M2 Repo</name>
-      <url>http://192.168.99.100:19080/kie-wb/maven2/</url>
+      <url>http://localhost:8080/kie-wb/maven2/</url>
     </repository>
   </repositories>
   <build>
