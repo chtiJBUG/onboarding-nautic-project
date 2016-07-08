@@ -1,0 +1,9 @@
+package org.training.leisure.swimmingpool;
+
+import java.lang.Number;
+
+rule "CreateSubscription"
+	dialect "mvel"
+	when
+	then
+end
