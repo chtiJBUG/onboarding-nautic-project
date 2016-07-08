@@ -19,16 +19,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>/public-jboss2</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+        <id>sonatype-plus-releases</id>
+        <url>http://oss.sonatype.org/content/repositories/releases/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>sonatype-plus-releases</id>
-        <url>http://oss.sonatype.org/content/repositories/releases/</url>
+        <id>/public-jboss2</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -179,6 +179,14 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>soapui</id>
+        <url>http://www.soapui.org/repository/maven2/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>central-old</id>
         <url>http://central.maven.org/maven2/</url>
         <source>SETTINGS</source>
@@ -189,14 +197,6 @@
       <metadata>
         <id>jboss-thirdparty-uploads</id>
         <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>soapui</id>
-        <url>http://www.soapui.org/repository/maven2/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -219,16 +219,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>kie-staging-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/kie-group</url>
+        <id>central</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/central</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/central</url>
+        <id>kie-staging-repository-group</id>
+        <url>https://repository.jboss.org/nexus/content/groups/kie-group</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
