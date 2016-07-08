@@ -116,7 +116,7 @@
       <include>true</include>
       <metadata>
         <id>guvnor-m2-repo</id>
-        <url>http://192.168.99.100:19080/kie-wb/maven2/</url>
+        <url>http://localhost:8080/kie-wb/maven2/</url>
         <source>PROJECT</source>
       </metadata>
     </repository>
