@@ -17,7 +17,7 @@ rule "BirthdayReduction"
 	then
 		Price nprice = new Price();
 		nprice.setDescription( "BirthdayReduction" );
-		nprice.setAmount( sprice.divide(new BigDecimal("10.0"),BigDecimal.ROUND_HALF_DOWN) );
+		nprice.setAmount( sprice.divide(new BigDecimal("10.0"),BigDecimal.ROUND_HALF_UP) );
 		nprice.setPriceType( PriceType.promotion );
 		insert( nprice );
 		pper.addPrice( nprice );
