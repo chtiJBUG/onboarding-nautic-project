@@ -147,14 +147,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>chtijbug-release</id>
-        <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-release/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>sonatype-plus-snapshots</id>
         <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
         <source>SETTINGS</source>
@@ -229,14 +221,6 @@
       <metadata>
         <id>thirdparty</id>
         <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>chtijbug-snapshot</id>
-        <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-snapshot/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
