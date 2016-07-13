@@ -67,14 +67,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>chtijbug-release</id>
-        <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-release/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>repository.springframework.maven.release</id>
         <url>http://maven.springframework.org/release</url>
         <source>SETTINGS</source>
@@ -214,14 +206,6 @@
         <id>local</id>
         <url>/root/.m2/repository</url>
         <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>chtijbug-snapshot</id>
-        <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-snapshot/</url>
-        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
