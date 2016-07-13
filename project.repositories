@@ -68,7 +68,7 @@
       <include>true</include>
       <metadata>
         <id>chtijbug-release</id>
-        <url>http:/build.pymma-software.org:8081/nexus/content/repositories/chtijbug-release/</url>
+        <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-release/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
