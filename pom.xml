@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.training.Leisure</groupId>
-  <artifactId>onboarding-nautic-project</artifactId>
+  <artifactId>swimmingpool</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>onboarding-nautic-project</name>
+  <name>swimmingpool</name>
   <dependencies>
     <dependency>
       <groupId>org.chtijbug.drools</groupId>
