@@ -1,0 +1,29 @@
+package org.training.leisure.swimmingpool;
+
+import java.lang.Number;
+import org.chtijbug.example.swimmingpool.Person;
+import java.util.List;
+import org.chtijbug.example.swimmingpool.Price;
+import org.chtijbug.example.swimmingpool.CalculatedAttribute;
+import org.chtijbug.example.swimmingpool.PriceType;
+
+rule "YougestUnder3YearsOldFree"
+	dialect "mvel"
+	ruleflow-group "promotion"
+	when
+		List( size() > 3 ) from collect ( Person( age >= 3.0 )) 
+		nn : Number( ) from accumulate ( Person( aage : age >= 3.0 ),
+			min(aage)) 
+		aPerson : Person( age == ( nn ) , Sprice : standardPrice != ( -1.0B ) )
+	then
+		Price aPrice = new Price();
+		aPrice.setDescription( "YougestOver3YearsOldFree" );
+		aPrice.setPriceType( PriceType.promotion );
+		aPrice.setAmount( Sprice );
+		insert( aPrice );
+		CalculatedAttribute fact0 = new CalculatedAttribute();
+		fact0.setKey( "YougestOver3YearsOldFree" );
+		fact0.setStringValue( "Person is free" );
+		insert( fact0 );
+		aPerson.addPrice( aPrice );
+end

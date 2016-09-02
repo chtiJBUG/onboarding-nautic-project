@@ -1,0 +1,12 @@
+package org.training.leisure.swimmingpool;
+
+import java.lang.Number;
+
+rule "StartProcessRule"
+	dialect "mvel"
+	salience 10
+	when
+		StartProcess( pId : processId != null )
+	then
+		kcontext.getKnowledgeRuntime().startProcess(pId);
+end
