@@ -11,102 +11,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>sonatype-plus-snapshots</id>
-        <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>local</id>
-        <url>/root/.m2/repository</url>
-        <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-thirdparty-uploads</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>snapshots</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/snapshots</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss</id>
-        <url>http://repository.jboss.org/maven2</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>guvnor-m2-repo</id>
-        <url>file:///root/.m2</url>
-        <source>PROJECT</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-deprecated</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>Jboss central group1</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>fusesource</id>
-        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>repo1</id>
-        <url>http://repo1.maven.org/maven2</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>jboss-origin-repository-group</id>
         <url>https://origin-repository.jboss.org/nexus/content/groups/ea/</url>
         <source>SETTINGS</source>
@@ -123,8 +27,32 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>sonatype-plus-snapshots</id>
+        <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss</id>
+        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>apache-public</id>
         <url>https://repository.apache.org/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-thirdparty-uploads</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -139,6 +67,22 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>local</id>
+        <url>/root/.m2/repository</url>
+        <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-public-repository-group</id>
+        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>fusesource.snapshot</id>
         <url>http://repo.fusesource.com/nexus/content/groups/public-snapshots/</url>
         <source>SETTINGS</source>
@@ -147,8 +91,40 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>snapshots</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/snapshots</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>guvnor-m2-repo</id>
+        <url>file:///root/.m2</url>
+        <source>PROJECT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss</id>
+        <url>http://repository.jboss.org/maven2</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>kie-staging-repository-group</id>
         <url>https://repository.jboss.org/nexus/content/groups/kie-group</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-deprecated</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -171,16 +147,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/central</url>
+        <id>ibiblio</id>
+        <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>ibiblio</id>
-        <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
+        <id>central</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/central</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -195,8 +171,32 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>Jboss central group1</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>central-old</id>
         <url>http://central.maven.org/maven2/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>fusesource</id>
+        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>repo1</id>
+        <url>http://repo1.maven.org/maven2</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
