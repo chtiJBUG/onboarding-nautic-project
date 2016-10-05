@@ -7,7 +7,7 @@ import org.chtijbug.example.swimmingpool.Person;
 import org.chtijbug.example.swimmingpool.Period;
 
 rule "BirthdayReduction"
-	dialect "java"
+	dialect "mvel"
 	ruleflow-group "reduction"
 	when
 		ccat : CalculatedAttribute( key == "IsPersonBirthday" , stringValue == "true" )
