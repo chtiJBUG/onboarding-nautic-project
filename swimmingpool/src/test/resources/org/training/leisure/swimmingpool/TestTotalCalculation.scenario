@@ -52,7 +52,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>107</executionTimeResult>
+      <executionTimeResult>156</executionTimeResult>
       <numberOfRulesFired>7</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -90,10 +90,10 @@
       <fieldValues>
         <expect-field>
           <fieldName>amount</fieldName>
-          <expected>-1</expected>
+          <expected>1</expected>
           <actualResult>11.0</actualResult>
-          <successResult>true</successResult>
-          <explanation>[Price] field [amount] was [-1].</explanation>
+          <successResult>false</successResult>
+          <explanation>[Price] field [amount] was [11.0] expected [-1].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -101,8 +101,8 @@
           <fieldName>description</fieldName>
           <expected>BirthdayReduction</expected>
           <actualResult>Final</actualResult>
-          <successResult>true</successResult>
-          <explanation>[Price] field [description] was [BirthdayReduction].</explanation>
+          <successResult>false</successResult>
+          <explanation>[Price] field [description] was [Final] expected [BirthdayReduction].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -122,7 +122,7 @@
         <expect-field>
           <fieldName>amount</fieldName>
           <expected>11.0</expected>
-          <actualResult>-1</actualResult>
+          <actualResult>1</actualResult>
           <successResult>true</successResult>
           <explanation>[Price] field [amount] was [11.0].</explanation>
           <operator>==</operator>
@@ -158,7 +158,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-06-28 13:35:28.384 UTC</lastRunResult>
+  <lastRunResult>2016-10-05 21:18:00.61 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
@@ -178,6 +178,12 @@
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>org.chtijbug.example.swimmingpool.Address</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.training.leisure.swimmingpool.InsertPeriod</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.training.leisure.swimmingpool.StartProcess</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
