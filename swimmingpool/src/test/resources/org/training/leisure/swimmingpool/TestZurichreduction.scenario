@@ -64,7 +64,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>255</executionTimeResult>
+      <executionTimeResult>113</executionTimeResult>
       <numberOfRulesFired>7</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -101,17 +101,17 @@
       <fieldValues>
         <expect-field>
           <fieldName>amount</fieldName>
-          <expected>-2</expected>
-          <actualResult>No match</actualResult>
+          <expected>3</expected>
+          <actualResult>22.0</actualResult>
           <successResult>true</successResult>
-          <explanation>[Price] field [amount] was [-2].</explanation>
+          <explanation>[Price] field [amount] was [3].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>description</fieldName>
           <expected>ZurichReduction</expected>
-          <actualResult>No match</actualResult>
+          <actualResult>Final</actualResult>
           <successResult>true</successResult>
           <explanation>[Price] field [description] was [ZurichReduction].</explanation>
           <operator>==</operator>
@@ -122,7 +122,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-06-28 13:33:23.255 UTC</lastRunResult>
+  <lastRunResult>2016-10-05 21:21:19.793 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>org.training.leisure.swimmingpool</packageName>
@@ -142,6 +142,12 @@
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>org.chtijbug.example.swimmingpool.Address</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.training.leisure.swimmingpool.InsertPeriod</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.training.leisure.swimmingpool.StartProcess</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
