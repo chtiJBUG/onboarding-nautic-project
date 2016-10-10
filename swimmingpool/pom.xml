@@ -31,8 +31,8 @@
                 </repository>
                 <repository>
                     <id>sonatype-plus-snapshots</id>
-                    <name>sonatype-plus</name>http://oss.sonatype.org/content/repositories/snapshots/
-                    <url></url>
+                    <name>sonatype-plus</name>
+                    <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
                     <snapshots>
                         <enabled>true</enabled>
                         <updatePolicy>interval:20</updatePolicy>
