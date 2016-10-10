@@ -20,6 +20,24 @@
       <name>Guvnor M2 Repo</name>
       <url>http://localhost:8080/kie-wb/maven2/</url>
     </repository>
+    <repository>
+                    <id>sonatype-plus-releases</id>
+                    <name>sonatype-plus</name>
+                    <url>http://oss.sonatype.org/content/repositories/releases/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>interval:20</updatePolicy>
+                    </releases>
+                </repository>
+                <repository>
+                    <id>sonatype-plus-snapshots</id>
+                    <name>sonatype-plus</name>http://oss.sonatype.org/content/repositories/snapshots/
+                    <url></url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>interval:20</updatePolicy>
+                    </snapshots>
+                </repository>
   </repositories>
   <build>
     <plugins>
