@@ -11,7 +11,7 @@
     <dependency>
       <groupId>org.chtijbug.drools</groupId>
       <artifactId>drools-framework-swimming-pool-model</artifactId>
-      <version>2.0.0-SNAPSHOT</version>
+      <version>2.0.6-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <repositories>
@@ -21,23 +21,15 @@
       <url>http://localhost:8080/kie-wb/maven2/</url>
     </repository>
     <repository>
-                    <id>sonatype-plus-releases</id>
-                    <name>sonatype-plus</name>
-                    <url>http://oss.sonatype.org/content/repositories/releases/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                        <updatePolicy>interval:20</updatePolicy>
-                    </releases>
-                </repository>
-                <repository>
-                    <id>sonatype-plus-snapshots</id>
-                    <name>sonatype-plus</name>
-                    <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
-                    <snapshots>
-                        <enabled>true</enabled>
-                        <updatePolicy>interval:20</updatePolicy>
-                    </snapshots>
-                </repository>
+      <id>my-sonatype-plus-releases</id>
+      <name>sonatype-plus</name>
+      <url>http://oss.sonatype.org/content/repositories/releases/</url>             
+    </repository>
+    <repository>
+      <id>my-sonatype-plus-snapshots</id>
+      <name>sonatype-plus</name>
+      <url>http://oss.sonatype.org/content/repositories/snapshots/</url>              
+    </repository>
   </repositories>
   <build>
     <plugins>
